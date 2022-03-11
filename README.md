@@ -4,13 +4,6 @@ We have built our source code on top of 3 repositories:
 * IFRNet [3](https://github.com/birdortyedi/instagram-filter-removal-pytorch)
 
 
-To download pre-trained models:
-
-```
-python3 models/download.py 
-```
-
-
 We have used the synthetic mixed-illuminant evaluation set proposed by Afifi et al. [2]
 
 ```
@@ -42,6 +35,13 @@ You can download the synthetic test set (jpg images) from the following links:
 * [Further information](https://github.com/mahmoudnafifi/mixedillWB#dataset)
 
 
+To download our trained models:
+
+```
+python3 models/download.py 
+```
+
+Please do not forget to change -ted (--testing-dir) parameters in bash script with the folder you download the dataset, if you want to simulate.
 To simulate the evaluation on the synthetic mixed-illuminant evaluation set -after downloading the dataset and pre-trained weights-:
 
 patch size: 64 & white-balance settings: D S T: 
