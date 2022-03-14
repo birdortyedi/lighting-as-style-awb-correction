@@ -1,0 +1,13 @@
+matplotlib==3.3.4
+seaborn==0.11.0
+tqdm==4.38.0
+torchvision==0.11.2
+kornia==0.5.11
+numpy==1.19.2
+opencv_contrib_python_nonfree==4.1.1.1
+torch==1.8.0
+requests==2.25.1
+scipy==1.4.1
+colour==0.1.5
+Pillow==9.0.1
+scikit_learn==1.0.2

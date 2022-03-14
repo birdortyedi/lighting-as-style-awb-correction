@@ -4,6 +4,7 @@ import logging
 import tqdm
 import numpy as np
 import cv2
+import subprocess
 import torch
 import torch.nn.functional as F
 import torchvision.transforms
@@ -254,6 +255,10 @@ if __name__ == '__main__':
         net = mixed_wb_net.WBnet(device=device, norm=args.norm, inchnls=3 * len(args.wb_settings))
 
     model_path = os.path.join('models', args.model_name + '.pth')
+    if not os.path.exists(model_path):
+        logging.info("Trained weights not exists, downloading...")
+        cmd = "python3 models/download.py"
+        subprocess.run(cmd, shell=True, check=True, stdout=subprocess.PIPE, universal_newlines=True)
     net.load_state_dict(torch.load(model_path, map_location=device))
     logging.info(f'Model loaded from {model_path}')
 

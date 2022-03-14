@@ -53,3 +53,5 @@ patch size: 128 & white-balance settings: D S T:
 ```
 ./test_synthetic_128_dst.sh
 ```
+
+Visual outputs can be seen in the folder "results/ifrnet/images/synthetic" after simulating the evaluation.
