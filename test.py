@@ -226,7 +226,7 @@ def get_args():
     parser.add_argument('-ka', '--keep-aspect-ratio', dest='keep_aspect_ratio', default=False, type=bool, help='To keep aspect ratio before processing. Only works when multi-scale is off.')
     parser.add_argument('-ms', '--multi-scale', dest='multi_scale', default=True, type=bool)
     parser.add_argument('-pp', '--post-process', dest='post_process', default=True, type=bool)
-    parser.add_argument('-ted', '--testing-dir', dest='tedir', default='./data/synthetic-gt/', help='Testing directory')
+    parser.add_argument('-ted', '--testing-dir', dest='tedir', default='./mixedillWB/data/mixedill_test_set/', help='Testing directory')
     parser.add_argument('-od', '--outdir', dest='outdir', default='./results/ifrnet/images/synthetic', help='Results directory')
     parser.add_argument('-g', '--gpu', dest='gpu', default=0, type=int)
     parser.add_argument('-ts', '--target-size', dest='t_size', default=384, type=int, help='Size before feeding images to the network. '
